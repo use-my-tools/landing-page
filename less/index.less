@@ -54,6 +54,10 @@
       line-height: 1.75em;
       margin: 0 0 1em 0;
       text-transform: uppercase;
+
+      @media @mobile {
+        font-size: 8rem;
+      }
   
     }
     p {
@@ -91,7 +95,14 @@
       color: @landing-color-white;
       line-height: 1.75em;
       margin: 0 0 1em 0;
+
+      @media @mobile {
+        font-size: 5rem;
+        line-height: 1.25em;
+        margin: 0;
+      }
     }
+    
     p {
       font-size: 2.6rem;
     }
@@ -100,11 +111,35 @@
       background-color: @landing-how-it-works-background;
       padding: 150px 5%;
 
+    h2 {
+      .center();
+      font-size: 8rem;
+      font-weight: lighter;
+      text-align: center;
+      color: @landing-color-white;
+      line-height: 1.75em;
+      margin: 0 0 1em 0;
+
+      @media @mobile {
+        font-size: 5rem;
+        line-height: 1.25em;
+        margin: 0;
+      }
+    }
+
     .how-body {
       .flex(space-between, center, row);
+
       .how-section {
         width: 30%;
         
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      @media @mobile {
+        flex-direction: column;
+        padding: 5% 10%;
       }
     }
   }
@@ -118,6 +153,10 @@
     .cta-left {
       width: 50%;
       padding: 0 40px;
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
     .cta-right {
       width: 50%;
@@ -125,7 +164,12 @@
       .button-creator(200px, 50px, @landing-color-background, @landing-color-white, 20px);
       padding: 0 40px;
     }
+    @media @mobile {
+      flex-direction: column;
+      padding: 5% 10%;
+    }
   }
+
 }
 footer {
   .center();
