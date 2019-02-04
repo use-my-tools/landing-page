@@ -192,39 +192,78 @@ img {
   top: 0;
 }
 .top-bar .menu .menu-button {
-  color: #e2d4d4;
+  color: #fff;
   font-size: 30px;
 }
-.container {
-  max-width: 1000px;
-}
 .container header {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: darkgray;
-  height: 500px;
-  padding-bottom: 15px;
+  height: 100vh;
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
 }
 .container header h1 {
-  font-size: 60px;
-  font-family: Didot, serif;
-  font-weight: bold;
+  font-family: "Helvetica", sans-serif;
+  font-size: 12rem;
+  font-weight: lighter;
   flex: 8;
   text-align: center;
-  color: #141010;
+  color: #fff;
+  line-height: 1.75em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+.container header p {
+  color: #fff;
 }
 .container header div {
   width: 50%;
 }
+.container header .more {
+  bottom: 0;
+  color: #fff;
+  font-size: 2rem;
+  height: 8%;
+  letter-spacing: 0.225em;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.container header a {
+  text-decoration: none;
+}
 .container .features {
   background-color: rgba(97, 100, 104, 0.25);
+  padding: 150px 5%;
+}
+.container .features h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #fff;
+  line-height: 1.75em;
+  margin: 0 0 1em 0;
+}
+.container .features p {
+  font-size: 2.6rem;
 }
 .container .how-it-works {
   background-color: rgba(97, 100, 104, 0.75);
+  padding: 150px 5%;
 }
 .container .how-it-works .how-body {
   display: flex;
@@ -276,6 +315,6 @@ footer {
   height: 50px;
   width: 100%;
   background-color: #141010;
-  color: #e2d4d4;
+  color: #fff;
   text-align: center;
 }
