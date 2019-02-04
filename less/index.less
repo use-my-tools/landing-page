@@ -23,20 +23,19 @@
 
 .container {
   //max-width: 1000px;
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   header {
     .flex(center, center, column);
     text-align: center;
     height: 100vh;
-    
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		text-align: center;
     
     // @media(min-width: 1280px){
@@ -100,26 +99,31 @@
   .how-it-works {
       background-color: @landing-how-it-works-background;
       padding: 150px 5%;
-      
+
     .how-body {
       .flex(space-between, center, row);
       .how-section {
         width: 30%;
+        
       }
     }
   }
 
   .cta {
+    background-color: transparent;
     .flex(space-between, center, row);
     //width: 70%;
+    color: @landing-color-white;
+    padding: 5% 20%;
     .cta-left {
       width: 50%;
-    
+      padding: 0 40px;
     }
     .cta-right {
       width: 50%;
       .center();
-      .button-creator(200px, 50px, darkgray, white, 20px)
+      .button-creator(200px, 50px, @landing-color-background, @landing-color-white, 20px);
+      padding: 0 40px;
     }
   }
 }

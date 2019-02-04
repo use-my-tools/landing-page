@@ -195,12 +195,7 @@ img {
   color: #fff;
   font-size: 30px;
 }
-.container header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+.container {
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
@@ -209,6 +204,13 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.container header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
   text-align: center;
 }
 .container header h1 {
@@ -244,7 +246,7 @@ img {
   text-decoration: none;
 }
 .container .features {
-  background-color: rgba(97, 100, 104, 0.25);
+  background-color: #4e4f55;
   padding: 150px 5%;
 }
 .container .features h2 {
@@ -262,7 +264,7 @@ img {
   font-size: 2.6rem;
 }
 .container .how-it-works {
-  background-color: rgba(97, 100, 104, 0.75);
+  background-color: #646168;
   padding: 150px 5%;
 }
 .container .how-it-works .how-body {
@@ -275,13 +277,17 @@ img {
   width: 30%;
 }
 .container .cta {
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  color: #fff;
+  padding: 5% 20%;
 }
 .container .cta .cta-left {
   width: 50%;
+  padding: 0 40px;
 }
 .container .cta .cta-right {
   width: 50%;
@@ -293,11 +299,12 @@ img {
   align-items: center;
   width: 200px;
   height: 50px;
-  background-color: darkgray;
-  color: white;
+  background-color: #616468;
+  color: #fff;
   border: 1px solid black;
   cursor: pointer;
   font-size: 20px;
+  padding: 0 40px;
 }
 @media (max-width: 500px) {
   .container .cta .cta-right {
@@ -306,7 +313,7 @@ img {
 }
 .container .cta .cta-right:hover {
   background: white;
-  color: darkgray;
+  color: #616468;
 }
 footer {
   display: flex;
