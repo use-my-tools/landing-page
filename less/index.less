@@ -71,6 +71,10 @@
     }
     div {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
     button {
       .button-creator(200px, 50px, @primary, @landing-color-white, 20px, @primary-dark);

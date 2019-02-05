@@ -236,6 +236,11 @@ img {
 .container header div {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .container header div {
+    width: 100%;
+  }
+}
 .container header button {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
