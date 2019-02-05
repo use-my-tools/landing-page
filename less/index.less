@@ -45,16 +45,18 @@
 
     h1 {
       //font-size: 60px;
-      font-family: "Helvetica", sans-serif;
+      font-family: 'Permanent Marker', cursive;
       font-size: 12rem;
       font-weight: lighter;
       flex: 8;
       text-align: center;
       color: @landing-color-white;
       line-height: 1.75em;
-      margin: 0 0 1em 0;
+      //margin: 0 0 1em 0;
       text-transform: uppercase;
-
+      @media @tablet {
+        font-size: 10rem;
+      }
       @media @mobile {
         font-size: 8rem;
       }
@@ -65,6 +67,11 @@
     }
     div {
       width: 50%;
+    }
+    button {
+      .button-creator(200px, 50px, @primary, @landing-color-white, 20px, @primary-dark);
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      margin: 2%;
     }
     .more {
       bottom: 0;
@@ -85,8 +92,14 @@
   }
 
   .features {
-    background-color: @landing-features-background;
+    //background-color: @landing-features-background;
+    background-color: @primary-light;
     padding: 150px 5%;
+    color: @landing-features-text;
+
+    @media @tablet {
+      padding: 5% 5%;
+    }
     h2 {
       .center();
       font-size: 8rem;
@@ -108,8 +121,9 @@
     }
   }
   .how-it-works {
-      background-color: @landing-how-it-works-background;
-      padding: 150px 5%;
+      //background-color: @landing-how-it-works-background;
+      background-color: @primary-dark;
+      padding: 5% 5%;
 
     h2 {
       .center();
@@ -128,13 +142,18 @@
     }
 
     .how-body {
-      .flex(space-between, center, row);
-
+      .flex(space-between, flex-start, row);
+      //align-items: flex-start;
+      
       .how-section {
         width: 30%;
         
         @media @mobile {
           width: 100%;
+          padding: 2%;
+        }
+        h3, p {
+          color: @landing-color-white;
         }
       }
       @media @mobile {
@@ -153,18 +172,23 @@
     .cta-left {
       width: 50%;
       padding: 0 40px;
+
+      @media @tablet {
+        width: 75%;
+        padding: 5% 0%;
+      }
       @media @mobile {
         width: 100%;
-        padding: 0;
       }
     }
     .cta-right {
       width: 50%;
       .center();
-      .button-creator(200px, 50px, @landing-color-background, @landing-color-white, 20px);
+      .button-creator(200px, 50px, @secondary, @landing-color-white, 20px, @secondary-dark);
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       padding: 0 40px;
     }
-    @media @mobile {
+    @media @tablet {
       flex-direction: column;
       padding: 5% 10%;
     }
@@ -175,7 +199,7 @@ footer {
   .center();
   height: 50px;
   width: 100%;
-  background-color: @landing-color-black;
+  background-color: @primary;
   color: @landing-color-white;
   text-align: center;
 }

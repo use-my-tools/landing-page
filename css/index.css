@@ -137,14 +137,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Permanent Marker', cursive;
 }
 h1 {
   font-size: 4rem;
@@ -182,8 +182,11 @@ img {
   flex-direction: row;
   position: fixed;
   height: 44px;
-  background-color: #141010;
+  background-color: #9e0808;
   top: 0;
+  border-top: 5px solid #690000;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  z-index: 500;
 }
 .top-bar .menu .menu-button {
   color: #fff;
@@ -208,15 +211,19 @@ img {
   text-align: center;
 }
 .container header h1 {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Permanent Marker', cursive;
   font-size: 12rem;
   font-weight: lighter;
   flex: 8;
   text-align: center;
   color: #fff;
   line-height: 1.75em;
-  margin: 0 0 1em 0;
   text-transform: uppercase;
+}
+@media (max-width: 1025px) {
+  .container header h1 {
+    font-size: 10rem;
+  }
 }
 @media (max-width: 500px) {
   .container header h1 {
@@ -228,6 +235,32 @@ img {
 }
 .container header div {
   width: 50%;
+}
+.container header button {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #9e0808;
+  color: #fff;
+  border: 0px solid black;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .container header button {
+    width: 100%;
+  }
+}
+.container header button:hover {
+  background: #690000;
+  color: #fff;
 }
 .container header .more {
   bottom: 0;
@@ -245,8 +278,14 @@ img {
   text-decoration: none;
 }
 .container .features {
-  background-color: #4e4f55;
+  background-color: #d74731;
   padding: 150px 5%;
+  color: #251111;
+}
+@media (max-width: 1025px) {
+  .container .features {
+    padding: 5% 5%;
+  }
 }
 .container .features h2 {
   display: flex;
@@ -270,8 +309,8 @@ img {
   font-size: 2.6rem;
 }
 .container .how-it-works {
-  background-color: #646168;
-  padding: 150px 5%;
+  background-color: #690000;
+  padding: 5% 5%;
 }
 .container .how-it-works h2 {
   display: flex;
@@ -294,7 +333,7 @@ img {
 .container .how-it-works .how-body {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 }
 .container .how-it-works .how-body .how-section {
@@ -303,7 +342,12 @@ img {
 @media (max-width: 500px) {
   .container .how-it-works .how-body .how-section {
     width: 100%;
+    padding: 2%;
   }
+}
+.container .how-it-works .how-body .how-section h3,
+.container .how-it-works .how-body .how-section p {
+  color: #fff;
 }
 @media (max-width: 500px) {
   .container .how-it-works .how-body {
@@ -324,10 +368,15 @@ img {
   width: 50%;
   padding: 0 40px;
 }
+@media (max-width: 1025px) {
+  .container .cta .cta-left {
+    width: 75%;
+    padding: 5% 0%;
+  }
+}
 @media (max-width: 500px) {
   .container .cta .cta-left {
     width: 100%;
-    padding: 0;
   }
 }
 .container .cta .cta-right {
@@ -340,11 +389,12 @@ img {
   align-items: center;
   width: 200px;
   height: 50px;
-  background-color: #616468;
+  background-color: #5b3f36;
   color: #fff;
-  border: 1px solid black;
+  border: 0px solid black;
   cursor: pointer;
   font-size: 20px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   padding: 0 40px;
 }
 @media (max-width: 500px) {
@@ -353,10 +403,10 @@ img {
   }
 }
 .container .cta .cta-right:hover {
-  background: white;
-  color: #616468;
+  background: #301810;
+  color: #fff;
 }
-@media (max-width: 500px) {
+@media (max-width: 1025px) {
   .container .cta {
     flex-direction: column;
     padding: 5% 10%;
@@ -368,7 +418,7 @@ footer {
   align-items: center;
   height: 50px;
   width: 100%;
-  background-color: #141010;
+  background-color: #9e0808;
   color: #fff;
   text-align: center;
 }
