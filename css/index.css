@@ -262,6 +262,12 @@ img {
   background: #690000;
   color: #fff;
 }
+@media (max-width: 500px) {
+  .container header button {
+    width: 70%;
+    margin: 10%;
+  }
+}
 .container header .more {
   bottom: 0;
   color: #fff;
@@ -310,7 +316,12 @@ img {
 }
 .container .how-it-works {
   background-color: #690000;
-  padding: 5% 5%;
+  padding: 5% 3%;
+}
+@media (max-width: 1025px) {
+  .container .how-it-works {
+    padding: 5% 1%;
+  }
 }
 .container .how-it-works h2 {
   display: flex;
@@ -335,24 +346,46 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .container .how-it-works .how-body .how-section {
   width: 30%;
+  padding: 1% 1% 3% 0;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  width: 450px;
+  height: 200px;
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.container .how-it-works .how-body .how-section img {
+  width: 110px;
+  margin: 10px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .container .how-it-works .how-body .how-section img {
+    width: 25%;
+    height: 50%;
+  }
 }
 @media (max-width: 500px) {
   .container .how-it-works .how-body .how-section {
     width: 100%;
-    padding: 2%;
+    padding: 5%;
+    height: auto;
   }
-}
-.container .how-it-works .how-body .how-section h3,
-.container .how-it-works .how-body .how-section p {
-  color: #fff;
 }
 @media (max-width: 500px) {
   .container .how-it-works .how-body {
     flex-direction: column;
-    padding: 5% 10%;
+    padding: 5% 0;
   }
 }
 .container .cta {
@@ -410,6 +443,11 @@ img {
   .container .cta {
     flex-direction: column;
     padding: 5% 10%;
+  }
+}
+@media (max-width: 500px) {
+  .container .cta {
+    padding: 10% 15%;
   }
 }
 footer {
