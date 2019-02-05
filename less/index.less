@@ -133,6 +133,9 @@
       @media @tablet {
         padding: 5% 1%;
       }
+      @media @mobile {
+        width: 100%;
+      }
 
     h2 {
       .center();
@@ -151,7 +154,7 @@
     }
 
     .how-body {
-      .flex(space-between, flex-start, row);
+      .flex(space-around, flex-start, row);
       //align-items: flex-start;
       flex-wrap: wrap;
       
@@ -182,8 +185,10 @@
         }
         @media @mobile {
           width: 100%;
-          padding: 5%;
+          padding: 0 5%;
           height: auto;
+          margin: 0;
+          //.radius(0px);
         }
         h3, p {
           //color: @landing-color-white;
@@ -198,10 +203,10 @@
 
   .cta {
     background-color: transparent;
-    .flex(space-between, center, row);
+    .flex(space-evenly, center, row);
     //width: 70%;
     color: @landing-color-white;
-    padding: 5% 20%;
+    padding: 5% 10%;
     .cta-left {
       width: 50%;
       padding: 0 40px;
@@ -217,7 +222,7 @@
     .cta-right {
       width: 50%;
       .center();
-      .button-creator(200px, 50px, @secondary, @landing-color-white, 20px, @secondary-dark);
+      .button-creator(200px, 50px, @primary, @landing-color-white, 20px, @primary-dark);
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       padding: 0 40px;
     }
@@ -235,7 +240,7 @@ footer {
   .center();
   height: 50px;
   width: 100%;
-  background-color: @primary;
+  background-color: @primary-dark;
   color: @landing-color-white;
   text-align: center;
 }
