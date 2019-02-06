@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="./CSS/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="./components/TopBar/TopBar.js" async></script>
+	<script src="./components/Menu/Menu.js" async></script>
+	<script src="./js/index.js" async></script>
 </head>
 
 
@@ -17,8 +21,21 @@
 
 	<!-- Here is the Menu -->
 	<div class="top-bar">
+		<div class="heading">USE MY TOOLS</div>
+		<!-- <i class="fas fa-cog"></i> -->
 		<div class="menu">
 			<div class="menu-button">MENU</div>
+			<div class="menu-content menu-hidden slide-out-right">
+				<img src="./images/close.svg" alt="close" class="close-btn">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="https://mytools2019-ehvj06hiu.now.sh/register">Sign Up</a></li>
+					<li><a href="https://mytools2019-ehvj06hiu.now.sh/login">Log In</a></li>
+				</ul>
+				<!-- <a class="dropdown-link" href="https://lambdaschool.com/" target="_blank">Lambda</a>
+				<a class="dropdown-link" href="https://www.google.com/" target="_blank">Google</a>
+				<a class="dropdown-link" href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a> -->
+		  </div>	
 		</div>
 	</div>
 
@@ -31,7 +48,7 @@
 			<div>
 				<p>Share your tools without worry. </p>
 			</div>
-			<button>Sign Up</button>
+			<a href="https://mytools2019-ehvj06hiu.now.sh/register"><button>Sign Up</button></a> 
 			<a href="#features" class="more">Learn More</a>
 		</header>
 
@@ -109,13 +126,10 @@
 		</div>
 		<div class="cta">
 			<div class="cta-left">
-				<p>Raclette selfies whatever 3 wolf moon letterpress kale chips farm-to-table poke helvetica. Fam man bun fashion
-					axe letterpress pop-up wayfarers portland gentrify, authentic meggings cold-pressed kale chips woke shabby chic
-					twee. Stumptown thundercats cliche freegan copper mug chicharrones synth cloud bread snackwave you probably
-					haven't heard of them vinyl cardigan.</p>
+				<p>We already have <span id="get-api"></span> tools ready to be borrowed. Join the tool share revolution!</p>
 			</div>
 			<div class="cta-right">
-				<div class="cta-button">Sign Up</div>
+				<a href="https://mytools2019-ehvj06hiu.now.sh/register"><button>Sign Up</button></a>
 			</div>
 		</div>
 	</div>
