@@ -534,7 +534,7 @@ img {
 }
 .container .features {
   background-color: #321911;
-  padding: 150px 10%;
+  padding: 150px 15%;
   color: #fff;
 }
 @media (max-width: 1025px) {
@@ -561,7 +561,7 @@ img {
   }
 }
 .container .features p {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
 }
 .container .how-it-works {
   background-color: #808e95;
