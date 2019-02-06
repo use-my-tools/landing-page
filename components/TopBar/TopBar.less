@@ -1,29 +1,32 @@
 .top-bar {
-  .width-100();
-  .flex(space-between, center);
-  position: fixed;
-  height: 44px;
-  background-color: @primary;
-  top: 0;
-  border-top: 4px solid @primary-dark;
-  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
-  z-index: 500;
-  padding: 0 50px;
-
-  .heading{
-    font-family: 'Permanent Marker', cursive;
-    color: @landing-color-white;
-    font-size: 30px;
-  }
-
-  // .fas{
-  //   color: @landing-color-white;
-  //   font-size: 30px;
-  // }
-  .menu {
-    .menu-button{
-      color: @landing-color-white;
-      font-size: 30px;
+    .width-100();
+    .flex(space-between, center);
+    position: fixed;
+    height: 44px;
+    background-color: @primary;
+    top: 0;
+    border-top: 4px solid @primary-dark;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    z-index: 500;
+    padding: 0 50px;
+    @media @mobile {
+        padding: 0 5%;
     }
-  }
+    .heading {
+        font-family: 'Permanent Marker', cursive;
+        color: @landing-color-white;
+        font-size: 30px;
+        @media @mobile {
+            font-size: 20px;
+        }
+    }
+    .menu {
+        .menu-button {
+            color: @landing-color-white;
+            font-size: 30px;
+            @media @mobile {
+                font-size: 20px;
+            }
+        }
+    }
 }
