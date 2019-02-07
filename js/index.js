@@ -2,10 +2,6 @@
 // API call to get the number of tools
 const getApi = document.querySelector('#get-api');
 
-// fetch('https://tools-backend.herokuapp.com/api/tools')
-//     .then(res => res.json())
-//     .then(data => data.data.map(tool => (tool)));
-
 fetch('https://tools-backend.herokuapp.com/api/tools')
 .then(res => res.json())
 .then(data => data.data.map(tool => {
@@ -13,7 +9,7 @@ fetch('https://tools-backend.herokuapp.com/api/tools')
 }))
 
 
-// Function to scroll down
+// Function to scroll down from header
 scrollTo = (element) => {
     window.scrollTo({
       behavior: 'smooth',
