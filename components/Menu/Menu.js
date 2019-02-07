@@ -24,4 +24,25 @@ class Menu {
     }
 }
 
+//Spin the menu gear when an element is selected
+class Spin {
+    constructor(element) {
+      this.element = element;
+      this.cog = this.element.querySelector('.fas');
+   
+      this.element.addEventListener('mouseover', () => { this.spinOn() });
+      this.element.addEventListener('mouseout', () => { this.spinOff() });
+    }
+  
+    spinOn() {
+        this.cog.classList.add('fa-spin');
+    }
+    spinOff() {
+        this.cog.classList.remove('fa-spin');
+    }
+}
+
 let menuClick = document.querySelectorAll('.menu').forEach( menu => new Menu(menu));
+
+//rotate font awesome gear on rotate
+let menuHover = document.querySelectorAll('.menu-content ul li').forEach( hover => new Spin(hover));

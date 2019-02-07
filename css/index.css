@@ -236,9 +236,9 @@ img {
   top: 0;
   width: 25%;
   z-index: 10002;
-  box-shadow: -2px 0px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: -2px 0px 4px -1px rgba(0, 0, 0, 0.2), -4px 0px 5px 0px rgba(0, 0, 0, 0.14), -1px 0px 10px 0px rgba(0, 0, 0, 0.12);
 }
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .menu .menu-content {
     width: 40%;
   }
@@ -268,7 +268,7 @@ img {
 .menu a {
   border: 0;
   color: inherit;
-  display: block;
+  display: inline;
   font-size: 3rem;
   outline: 0;
   text-decoration: none;
@@ -278,6 +278,9 @@ img {
 .menu a:hover {
   color: #808e95;
   background-color: #e2f1f8;
+}
+.menu .fas {
+  font-size: 30px;
 }
 .menu li {
   border-top: solid 1px rgba(0, 0, 0, 0.125);
@@ -463,7 +466,7 @@ img {
   line-height: 1.75em;
   text-transform: uppercase;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .container header h1 {
     font-size: 10rem;
   }
@@ -534,10 +537,11 @@ img {
 }
 .container .features {
   background-color: #321911;
+  box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.2), 0px -4px 5px 0px rgba(0, 0, 0, 0.14), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
   padding: 150px 15%;
   color: #fff;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .container .features {
     padding: 5% 5%;
   }
@@ -568,7 +572,7 @@ img {
   color: #141010;
   padding: 5% 3%;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .container .how-it-works {
     padding: 5% 1%;
   }
@@ -606,7 +610,7 @@ img {
 }
 .container .how-it-works .how-body .how-section {
   width: 30%;
-  padding: 1% 1% 3% 0;
+  padding: 1% 1% 1% 0;
   background-color: #fff;
   color: #141010;
   width: 450px;
@@ -614,6 +618,7 @@ img {
   margin: 1%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -660,7 +665,7 @@ img {
   width: 50%;
   padding: 0 40px;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .container .cta .cta-left {
     width: 75%;
     padding: 5% 0%;
@@ -714,15 +719,16 @@ img {
   text-decoration: none;
   color: #fff;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .container .cta {
     flex-direction: column;
     padding: 5% 10%;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
   .container .cta {
-    padding: 10% 15%;
+    padding: 10% 3%;
   }
 }
 .menu-on {
