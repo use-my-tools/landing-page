@@ -1,0 +1,44 @@
+.width-100 {
+  width: 100%;
+}
+
+
+.flex(@jc: none, @ai: none, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
+}
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.button-creator(@width, @height, @bg-color, @font-color, @font-size, @hover: white) {
+  .border-radius(15px);
+  .center;
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  color: @font-color;
+  border: 0px solid black;
+  cursor: pointer;
+  font-size: @font-size;
+
+  @media @mobile {
+    width: 100%;
+  }
+  
+  &:hover {
+    background: @hover;
+    color: @font-color;
+  }
+}
